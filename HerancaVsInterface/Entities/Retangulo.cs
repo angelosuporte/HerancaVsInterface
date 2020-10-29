@@ -4,7 +4,7 @@ using HerancaVsInterface.Enums;
 
 namespace HerancaVsInterface.Entities
 {
-    class Retangulo : Forma
+    class Retangulo : AbstractForma
     {
         public double Largura { get; set; }
         public double Altura { get; set; }
@@ -16,7 +16,7 @@ namespace HerancaVsInterface.Entities
 
         public override string ToString()
         {
-            return "Cor do Retangulo =" + cor + ", largura = "
+            return "Cor do Retangulo = " + Cor + ", largura = "
                 + Largura.ToString("F2", CultureInfo.InvariantCulture)
                 + ", altura = "
                 + Altura.ToString("F2", CultureInfo.InvariantCulture)

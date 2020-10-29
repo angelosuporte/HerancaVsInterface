@@ -4,7 +4,7 @@ using HerancaVsInterface.Enums;
 
 namespace HerancaVsInterface.Entities
 {
-    class Circulo : Forma
+    class Circulo : AbstractForma
     {
         public double Raio { get; set; }
 
@@ -15,7 +15,7 @@ namespace HerancaVsInterface.Entities
 
         public override string ToString()
         {
-            return "Cor do Círculo =" + cor + ", raio = " 
+            return "Cor do Círculo = " + Cor + ", raio = " 
                 + Raio.ToString("F2", CultureInfo.InvariantCulture)
                 + ", area = " 
                 + Area().ToString("F2", CultureInfo.InvariantCulture);
